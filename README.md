@@ -7,3 +7,7 @@ the good old "Hello World" application for RubyMotion
 
 This code is the example of the RubyMotion Micro-Book, by Gant Laborde.
 All explanation of code and tests can be found in the book's Quickstart section.
+
+---------------------------------------
+NOTE: This branch is for Chapter 4
+---------------------------------------
