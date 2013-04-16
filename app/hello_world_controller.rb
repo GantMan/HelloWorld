@@ -2,7 +2,11 @@ class HelloWorldController < UIViewController
 	def viewDidLoad
 		p "Hello World"
 
-		view.backgroundColor = UIColor.whiteColor
+		@colors = [:white.uicolor, :red.uicolor, :yellow.uicolor, :blue.uicolor]
+
+		1.second.every do
+			view.backgroundColor = @colors.sample
+		end
 		center_x = view.frame.size.width / 2
 		center_y = view.frame.size.height / 2
 
