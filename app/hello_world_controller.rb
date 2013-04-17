@@ -2,12 +2,17 @@ class HelloWorldController < UIViewController
 	def viewDidLoad
 		p "Hello World"
 
+		# Made better with Sugarcube
+		# @colors = [UIColor.whiteColor, UIColor.redColor]
 		@colors = [:white.uicolor, :red.uicolor, :yellow.uicolor, :blue.uicolor]
 
-		ap @colors
 		1.second.every do
 			view.backgroundColor = @colors.sample
 		end
+
+		# see the magic of Awesome Print!
+		ap @colors
+		
 		center_x = view.frame.size.width / 2
 		center_y = view.frame.size.height / 2
 
