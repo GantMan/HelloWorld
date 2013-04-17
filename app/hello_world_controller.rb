@@ -4,6 +4,7 @@ class HelloWorldController < UIViewController
 
 		@colors = [:white.uicolor, :red.uicolor, :yellow.uicolor, :blue.uicolor]
 
+		ap @colors
 		1.second.every do
 			view.backgroundColor = @colors.sample
 		end
