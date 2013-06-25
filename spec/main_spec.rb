@@ -8,11 +8,11 @@ describe "Application 'HelloWorld'" do
     @app.windows.size.should == 1
   end
 
-  it "should has a rootViewController" do
-  	@window.rootViewController.should.not.equal nil
+  it "has a rootViewController" do
+  	@window.rootViewController.should.not == nil
   end
 
-  it "should use HelloWorldController as the rootViewController" do
+  it "uses HelloWorldController as the rootViewController" do
   	@window.rootViewController.class.should.equal HelloWorldController
   end
 end
